@@ -34,7 +34,10 @@ CREATE TABLE SYVH_DIM_OFFICES (
   state VARCHAR2(50),
   country VARCHAR2(50),
   postalCode VARCHAR2(15),
-  territory VARCHAR2(10)
+  territory VARCHAR2(10),
+  status_flag VARCHAR2(1),
+  starting_date DATE,
+  ending_date DATE
 );
 
 CREATE TABLE SYVH_DIM_PRODUCTS (
@@ -46,7 +49,10 @@ CREATE TABLE SYVH_DIM_PRODUCTS (
   productVendor VARCHAR2(50),
   productDescription VARCHAR2(1000),
   MSRP DECIMAL(10,2),
-  productLineDescription VARCHAR2(4000)
+  productLineDescription VARCHAR2(4000),
+  status_flag VARCHAR2(1),
+  starting_date DATE,
+  ending_date DATE
 );
 
 CREATE TABLE SYVH_DIM_EMPLOYEES (
@@ -58,7 +64,10 @@ CREATE TABLE SYVH_DIM_EMPLOYEES (
   email VARCHAR2(100),
   officeCode VARCHAR2(10),
   reportsTo INT,
-  jobTitle VARCHAR2(50)
+  jobTitle VARCHAR2(50),
+  status_flag VARCHAR2(1),
+  starting_date DATE,
+  ending_date DATE
 );
 
 CREATE TABLE SYVH_DIM_DATE (

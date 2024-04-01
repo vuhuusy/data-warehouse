@@ -66,10 +66,11 @@ CREATE TABLE SYVH_STG_customers (
 );
 
 CREATE TABLE SYVH_STG_payments (
-  customerNumber INT PRIMARY KEY,
+  customerNumber INT,
   checkNumber VARCHAR2(50),
   paymentDATE DATE,
-  amount DECIMAL(10,2)
+  amount DECIMAL(10,2),
+  PRIMARY KEY (customerNumber, checkNumber)
 );
 
 CREATE TABLE SYVH_STG_orders (
@@ -83,9 +84,10 @@ CREATE TABLE SYVH_STG_orders (
 );
 
 CREATE TABLE SYVH_STG_orderdetails (
-  orderNumber INT PRIMARY KEY,
+  orderNumber INT,
   productCode VARCHAR2(15),
   quantityOrdered INT,
   priceEach DECIMAL(10,2),
-  orderLineNumber INT
+  orderLineNumber INT,
+  PRIMARY KEY (orderNumber, productCode)
 );

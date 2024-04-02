@@ -48,6 +48,7 @@ CREATE TABLE SYVH_DIM_PRODUCTS (
   productScale VARCHAR2(10),
   productVendor VARCHAR2(50),
   productDescription VARCHAR2(1000),
+  buyPrice DECIMAL(10,2),
   MSRP DECIMAL(10,2),
   productLineDescription VARCHAR2(4000),
   status_flag VARCHAR2(1),
@@ -83,7 +84,6 @@ CREATE TABLE SYVH_FACT_ORDERLINE_TRANS (
   status VARCHAR2(20),
   quantityOrdered INT,
   priceEach DECIMAL(10,2),
-  buyPrice DECIMAL(10,2),
-  cost DECIMAL(20,4),
-  revenue DECIMAL(20,4)
+  cost DECIMAL(38,8),
+  revenue DECIMAL(38,8)
 );

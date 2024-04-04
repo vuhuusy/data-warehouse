@@ -74,9 +74,9 @@ CREATE TABLE SYVH_DIM_EMPLOYEES (
 CREATE TABLE SYVH_FACT_ORDERLINE_TRANS (
   orderNumber INT,
   orderLineNumber INT,
-  orderDateKey VARCHAR2(8),
-  requiredDateKey VARCHAR2(8),
-  shippedDateKey VARCHAR2(8),
+  orderDateKey NUMBER,
+  requiredDateKey NUMBER,
+  shippedDateKey NUMBER,
   customerKey INT,
   saleRepKey INT,
   officeKey INT,

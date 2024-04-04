@@ -6,6 +6,3 @@ CREATE TABLE SYVH_DMART_PRODUCT (
     revenue DECIMAL(38,8),
     profit DECIMAL(38,8)
 );
-
-
-

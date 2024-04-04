@@ -3,7 +3,7 @@ DROP TABLE SYVH_DIM_DATE;
 CREATE TABLE SYVH_DIM_DATE
 AS
 SELECT 
-    TO_CHAR (date_key, 'YYYYMMDD') AS date_value,
+    TO_NUMBER (TO_CHAR (date_key, 'YYYYMMDD')) AS date_value,
     date_key,
     TO_CHAR (date_key, 'DD/MM/YYYY') AS date_value_1,
     TO_NUMBER (TO_CHAR (date_key, 'D')) AS day_of_week_number,

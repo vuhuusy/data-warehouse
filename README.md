@@ -1,7 +1,7 @@
 # <p align="center" style="font-size: 39px;"><strong>Project: Xây dựng Data Warehouse cho công ty bán lẻ</strong></p>
 
 ## Table of Contents
-1. [Chú thích](#line-50)
+1. [Chú thích](#line-36)
 
 ### 1. Thông tin về bộ dữ liệu
    - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)

@@ -1,4 +1,4 @@
-# <p align="center" style="font-size: 39px;"><strong>Project: Xây dựng Data Warehouse cho công ty bán lẻ</strong></p>
+# <p align="center" style="font-size: 39px;"><strong>Project: Xây dựng Data Warehouse cho công ty thương mại điện tử</strong></p>
 
 ## Table of Contents
 1. [Thông tin về bộ dữ liệu](#line-30)
@@ -11,25 +11,3 @@
 
 ### 4. Kiến trúc Data Warehouse
 ![Data Warehouse Architecture](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/data%20warehouse/Data%20Warehouse%20Architecture.png)
-
-   - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-   -    - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-        -    - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-             -    - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-                  -    - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-                       -    - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-                            -    - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-                                 -    - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-                                      -    - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-                                           -    - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-                                                -    - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-                                                     -    - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-                                                          -    - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-                                                               -    - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-                                                                    -    - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-                                                                         -    - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-                                                                              -    - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-                                                                                   -    - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-                                                                                        -    - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-                                                                                             -    - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-                                                                                                  - 

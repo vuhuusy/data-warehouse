@@ -8,8 +8,9 @@ In this project, I am going to build a Data Warehouse for an E-commerce company.
 3. [Exploratory Data Analysis](#3)
 4. [Data Warehouse Architecture](#4)
 5. [Implementation Process](#5)
-   - [Data Source -> Staging Area](#6)
-   - [Staging Area -> Data Warehouse](#7)
+   - [Data Source to Staging Area](#6)
+   - [Staging Area to Data Warehouse](#7)
+   - [Data Warehouse to Data Mart](#8)
 
 
 ## 1. About the Dataset <a id="1"></a>
@@ -48,8 +49,8 @@ Tổng quan kiến trúc Data Warehouse:
 - **Data Mart:** Sau khi load dữ liệu đã được xử lý vào Data Warehouse, chúng ta tạo ra các Data Mart chứa dữ liệu cần dùng cho các phòng ban (department) (VD: product, region, customer)
 - **BI Tool:** Cắm dữ liệu vào Power BI vào tạo ra các báo cáo để đưa ra insight.
 
-## 5. Quy trình thực hiện <a id="5"></a>
-### 5.1. Data Source -> Staging Area <a id="6"></a>
+## 5. Implementation Process <a id="5"></a>
+### 5.1. Data Source to Staging Area <a id="6"></a>
 - Trong **Project** của ODI, tạo 1 folder đặt tên là SRC-STG để lưu trữ các job đổ dữ liệu từ *Source* vào *Staging*.
 - Trong Oracle Database: tạo database tên là Staging trong đó chứa các bảng có cấu trúc y hệt với các bảng ở source ([Code](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/staging/create%20table.sql)).
 - Tạo ra các **MAPPING**, đặt tên: SRC-STG_<tên_bảng_nguồn> để thực hiện load 1:1 dữ liệu từ source vào staging.
@@ -57,7 +58,7 @@ Tổng quan kiến trúc Data Warehouse:
 - Sử dụng Control Append và trước khi load dữ liệu mới vào bảng trong Staging thì sẽ phải truncate dữ liệu cũ trong Staging đi
 - Load 1:1 tức là không làm biến đổi dữ liệu, bảng ở source và bảng ở staging sẽ giống hệt nhau (Lưu ý: trong thực tế khi ETL bảng giao dịch sẽ chặn dữ liệu theo ngày, ví dụ: chỉ ETL dữ liệu bán hàng ngày hôm nay).
 
-### 5.2 Staging Area -> Data Warehouse <a id="7"></a>
+### 5.2 Staging Area to Data Warehouse <a id="7"></a>
 - Trong **Project** của ODI, tạo 1 folder đặt tên là STG-DWH để lưu trữ các job từ Staging vào DWH
 - Trong Oracle Database: tạo database tên là DWH trong đó chứa các bảng Dim và bảng Fact ([Logic mapping and SCD Behavior](https://docs.google.com/document/d/1aUuI05t6H8JNAP0yxywMeoEULC0fLZ7-QiKZPJ1tfuQ/edit?usp=sharing))
     <img src="https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/image/dwh_mapping.png" width="300"/>
@@ -71,6 +72,8 @@ Tổng quan kiến trúc Data Warehouse:
    - LKM Oracle to Oracle (Built-In)
    - IKM Oracle Slowly Changing Dimension
    - CKM Oracle
+ 
+### 5.3 Data Warehouse to Data Mart <a id="8"></a>
 ## 5. Other resources
 - [Slide](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/tree/main/slide)
 - [Steps to build a data warehouse](https://docs.google.com/document/d/1aUuI05t6H8JNAP0yxywMeoEULC0fLZ7-QiKZPJ1tfuQ/edit?usp=sharing)

@@ -18,7 +18,7 @@
       <img src="https://www.mysqltutorial.org/wp-content/uploads/2023/10/mysql-sample-database.png" width="600" />
 
 ## 2. Tools used in the Project
-- EDA: Python
+- EDA: Python (pandas, matplotlib, seaborn, ...)
 - Database: MySQL, Oracle Database
 - Data Integration Tool: Oracle Data Integrator
 - Data Visualization: PowerBI

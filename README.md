@@ -1,4 +1,4 @@
-# <p align="center" style="font-size: 39px;"><strong>PROJECT: Building a Data Warehouse for an e-commerce company</strong></p>
+# <p align="center" style="font-size: 39px;"><strong>PROJECT: Building a Data Warehouse for an E-commerce company</strong></p>
 
 ## Table of Contents
 1. [About the Dataset](#line-30)

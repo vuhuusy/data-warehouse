@@ -11,7 +11,7 @@ In this project, I am going to build a Data Warehouse for an E-commerce company.
    - [Data Source to Staging Area](#6)
    - [Staging Area to Data Warehouse](#7)
    - [Data Warehouse to Data Mart](#8)
-
+   - [Data Mart to BI Tool](#9)
 
 ## 1. About the Dataset <a id="1"></a>
    - The `classicmodels` database is a retailer of scale models of classic cars. It contains typical business data, including information about customers, products, sales orders, sales order line items, and more.
@@ -74,6 +74,9 @@ Tổng quan kiến trúc Data Warehouse:
    - CKM Oracle
  
 ### 5.3 Data Warehouse to Data Mart <a id="8"></a>
-## 5. Other resources
+
+### 5.4 Data Mart to BI Tool <a id="9"></a>
+
+## 6. Other resources
 - [Slide](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/tree/main/slide)
 - [Steps to build a data warehouse](https://docs.google.com/document/d/1aUuI05t6H8JNAP0yxywMeoEULC0fLZ7-QiKZPJ1tfuQ/edit?usp=sharing)

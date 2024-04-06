@@ -1,11 +1,21 @@
-# <p align="center" style="font-size: 39px;"><strong>Project: Xây dựng Data Warehouse cho công ty thương mại điện tử</strong></p>
+# <p align="center" style="font-size: 39px;"><strong>PROJECT: Building a Data Warehouse for an e-commerce company</strong></p>
 
 ## Table of Contents
-1. [Thông tin về bộ dữ liệu](#line-30)
+1. [About the Dataset](#line-30)
 
-### 1. Thông tin về bộ dữ liệu
-   - Bao gồm giới thiệu về bộ dữ liệu (dữ liệu về gì)
-
+### 1. About the Dataset
+   - The `classicmodels` database is a retailer of scale models of classic cars. It contains typical business data, including information about customers, products, sales orders, sales order line items, and more.
+   - The MySQL sample database schema consists of the following tables:
+      - **customers:** stores customer’s data.
+      - **products:** stores a list of scale model cars.
+      - **productlines:** stores a list of product lines.
+      - **orders:** stores sales orders placed by customers.
+      - **orderdetails:** stores sales order line items for every sales order.
+      - **payments:** stores payments made by customers based on their accounts.
+      - **employees:** stores employee information and the organization structure such as who reports to whom.
+      - **offices:** stores sales office data.
+   - The following picture illustrates the ER diagram of the sample database:
+      ![ERDiagram]([https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/data%20warehouse/Data%20Warehouse%20Architecture.png](https://www.mysqltutorial.org/wp-content/uploads/2023/10/mysql-sample-database.png))  
 ### 3. Khám phá dữ liệu (EDA)
    - Số bảng cột,...
 

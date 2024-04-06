@@ -15,8 +15,8 @@
       - **employees:** stores employee information and the organization structure such as who reports to whom.
       - **offices:** stores sales office data.
    - The following picture illustrates the ER diagram of the sample database:
-      ![ERDiagram]([https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/data%20warehouse/Data%20Warehouse%20Architecture.png](https://www.mysqltutorial.org/wp-content/uploads/2023/10/mysql-sample-database.png))  
-### 3. Khám phá dữ liệu (EDA)
+      <img src="https://www.mysqltutorial.org/wp-content/uploads/2023/10/mysql-sample-database.png" width="600" />
+### 3. Exploratory Data Analysis (EDA)
    - Số bảng cột,...
 
 ### 4. Giới thiệu về Tool sử dụng trong Project

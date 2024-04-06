@@ -7,8 +7,9 @@ In this project, I am going to build a Data Warehouse for an E-commerce company.
 2. [Tools used in the Project](#2)
 3. [Exploratory Data Analysis](#3)
 4. [Data Warehouse Architecture](#4)
-5. [Quy trình thực hiện](#5)
+5. [Implementation Process](#5)
    - [Data Source -> Staging Area](#6)
+   - [Staging Area -> Data Warehouse](#7)
 
 
 ## 1. About the Dataset <a id="1"></a>

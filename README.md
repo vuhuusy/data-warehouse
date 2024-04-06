@@ -1,6 +1,6 @@
 # <p align="center" style="font-size: 39px;"><strong>PROJECT: Building a Data Warehouse for an E-commerce company</strong></p>
 
-Trong Project này, chúng ta sẽ xây dựng Data Warehouse cho một công thương mại điện tử từ dữ liệu giao dịch không có thật
+In this project, I am going to build a Data Warehouse for an E-commerce company
 
 ## Table of Contents
 1. [About the Dataset](#1)

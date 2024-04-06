@@ -1,9 +1,11 @@
 # <p align="center" style="font-size: 39px;"><strong>PROJECT: Building a Data Warehouse for an E-commerce company</strong></p>
 
 ## Table of Contents
-1. [About the Dataset](#line-30)
-2. [Dòng cần liên kết đến](#dòng-cần-liên-kết-đến)
+1. [About the Dataset](#1)
+2. 
+
 ## 1. About the Dataset
+<a id="1"></a>
    - The `classicmodels` database is a retailer of scale models of classic cars. It contains typical business data, including information about customers, products, sales orders, sales order line items, and more.
    - The MySQL sample database schema consists of the following tables:
       - **customers:** stores customer’s data.
@@ -47,7 +49,3 @@ Tổng quan kiến trúc Data Warehouse:
 ## 5. Other resources
 - [Slide](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/tree/main/slide)
 - [Steps to build a data warehouse](https://docs.google.com/document/d/1aUuI05t6H8JNAP0yxywMeoEULC0fLZ7-QiKZPJ1tfuQ/edit?usp=sharing)
-
-
-### Dòng cần liên kết đến
-<a id="dòng-cần-liên-kết-đến"></a>

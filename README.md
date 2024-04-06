@@ -38,3 +38,6 @@ Tổng quan kiến trúc Data Warehouse:
    - Bảng Fact sẽ sử dụng cơ chế Control Append để load những dữ liệu mới
 - **Data Mart:** Sau khi load dữ liệu đã được xử lý vào Data Warehouse, chúng ta tạo ra các Data Mart chứa dữ liệu cần dùng cho các phòng ban (department) (VD: product, region, customer)
 - **BI Tool:** Cắm dữ liệu vào Power BI vào tạo ra các báo cáo để đưa ra insight
+
+## 5. Other resources
+- Slide

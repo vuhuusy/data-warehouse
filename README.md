@@ -49,17 +49,27 @@ Tổng quan kiến trúc Data Warehouse:
 
 ## 5. Quy trình thực hiện <a id="5"></a>
 ### 5.1. Data Source -> Staging Area <a id="6"></a>
-- Trong **Project** ở ODI, tạo 1 folder đặt tên là SRC-STG để lưu trữ các job đổ dữ liệu từ *Source* vào *Staging*.
-- Trong Oracle Database: tạo các bảng có cấu trúc y hệt với các bảng ở source ([Code](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/staging/create%20table.sql)).
+- Trong **Project** của ODI, tạo 1 folder đặt tên là SRC-STG để lưu trữ các job đổ dữ liệu từ *Source* vào *Staging*.
+- Trong Oracle Database: tạo database tên là Staging trong đó chứa các bảng có cấu trúc y hệt với các bảng ở source ([Code](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/staging/create%20table.sql)).
 - Tạo ra các **MAPPING**, đặt tên: SRC-STG_<tên_bảng_nguồn> để thực hiện load 1:1 dữ liệu từ source vào staging.
-- <img src="https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/image/staging_mapping.png" width="300"/>
-- Trước khi load dữ liệu mới vào bảng trong Staging thì sẽ phải truncate những dữ liệu cũ đi
+  <img src="https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/image/staging_mapping.png" width="300"/>
+- Sử dụng Control Append và trước khi load dữ liệu mới vào bảng trong Staging thì sẽ phải truncate dữ liệu cũ trong Staging đi
 - Load 1:1 tức là không làm biến đổi dữ liệu, bảng ở source và bảng ở staging sẽ giống hệt nhau (Lưu ý: trong thực tế khi ETL bảng giao dịch sẽ chặn dữ liệu theo ngày, ví dụ: chỉ ETL dữ liệu bán hàng ngày hôm nay).
 
 ### 5.2 Staging Area -> Data Warehouse <a id="7"></a>
-
-
-
+- Trong **Project** của ODI, tạo 1 folder đặt tên là STG-DWH để lưu trữ các job từ Staging vào DWH
+- Trong Oracle Database: tạo database tên là DWH trong đó chứa các bảng Dim và bảng Fact ([Logic mapping and SCD Behavior](https://docs.google.com/document/d/1aUuI05t6H8JNAP0yxywMeoEULC0fLZ7-QiKZPJ1tfuQ/edit?usp=sharing))
+    <img src="https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/image/dwh_mapping.png" width="300"/>
+- Tạo ra các **MAPPING**, đặt tên: STG-DWH_<tên bảng đích> để thực hiện load dữ liệu từ Staging vào các bảng Dim và bảng Fact (*Lưu ý: Phải load dữ liệu vào bảng Dim trước bảng Fact để nếu dữ liệu ở bảng Dim thay đổi thì bảng Fact có thể tiếp nhận được sự thay đổi đó nhờ SCD Type 2*)
+- Trong bảng Dim cũng sẽ sử dụng thêm 3 thuộc tính sau:
+     - STATUS_FLAG: chỉ báo hàng hiện tại có hiệu lực
+     - STARTING_DATE: Ngày bắt đầu có hiệu lực
+     - ENDING_DATE: Ngày hết hiệu lực
+- Chú ý: Các bảng Dim sẽ sử dụng [Surrogate Key](https://www.kimballgroup.com/1998/05/surrogate-keys/) làm khóa chính (PK)
+- Knowledge Modules used:
+   - LKM Oracle to Oracle (Built-In)
+   - IKM Oracle Slowly Changing Dimension
+   - CKM Oracle
 ## 5. Other resources
 - [Slide](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/tree/main/slide)
 - [Steps to build a data warehouse](https://docs.google.com/document/d/1aUuI05t6H8JNAP0yxywMeoEULC0fLZ7-QiKZPJ1tfuQ/edit?usp=sharing)

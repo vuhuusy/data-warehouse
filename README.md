@@ -24,7 +24,7 @@
 - Data Visualization: PowerBI
 
 ## 3. Exploratory Data Analysis (EDA)
-   - Số bảng cột,...
+- Exploratory Data Analysis: [Link](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/EDA.ipynb)
  
 
 ## 4. Kiến trúc Data Warehouse

@@ -4,7 +4,10 @@ Trong Project này, chúng ta sẽ xây dựng Data Warehouse cho một công th
 
 ## Table of Contents
 1. [About the Dataset](#1)
-2. 
+2. [Tools used in the Project](#2)
+3. [Exploratory Data Analysis](#3)
+4. [Data Warehouse Architecture](#4)
+5. 
 
 
 ## 1. About the Dataset <a id="1"></a>
@@ -21,17 +24,17 @@ Trong Project này, chúng ta sẽ xây dựng Data Warehouse cho một công th
    - The following picture illustrates the ER diagram of the sample database:
       <img src="https://www.mysqltutorial.org/wp-content/uploads/2023/10/mysql-sample-database.png" width="600" />
 
-## 2. Tools used in the Project
+## 2. Tools used in the Project <a id="2"></a>
 - EDA: Python (pandas, matplotlib, seaborn, ...)
 - Database: MySQL, Oracle Database
 - Data Integration Tool: Oracle Data Integrator
 - Data Visualization: PowerBI
 
-## 3. Exploratory Data Analysis (EDA)
+## 3. Exploratory Data Analysis <a id="3"></a>
 - Exploratory Data Analysis: [Link](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/EDA.ipynb)
  
 
-## 4. Kiến trúc Data Warehouse
+## 4. Data Warehouse Architecture <a id="4"></a>
 ![Data Warehouse Architecture](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/data%20warehouse/Data%20Warehouse%20Architecture.png)
 
 Tổng quan kiến trúc Data Warehouse:
@@ -43,7 +46,7 @@ Tổng quan kiến trúc Data Warehouse:
 - **Data Mart:** Sau khi load dữ liệu đã được xử lý vào Data Warehouse, chúng ta tạo ra các Data Mart chứa dữ liệu cần dùng cho các phòng ban (department) (VD: product, region, customer)
 - **BI Tool:** Cắm dữ liệu vào Power BI vào tạo ra các báo cáo để đưa ra insight
 
-## 5. Data Source -> Staging Area
+## 5. Data Source -> Staging Area <a id="5"></a>
 - Trong **Project** ở ODI, tạo 1 folder đặt tên là SRC-STG để lưu trữ các job đổ dữ liệu từ *Source* vào *Staging*
 - Ở Oracle Database: tạo các bảng có cấu trúc y hệt với các bảng ở nguồn
 -  

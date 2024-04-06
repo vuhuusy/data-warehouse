@@ -2,7 +2,7 @@
 
 ## Table of Contents
 1. [About the Dataset](#line-30)
-
+2. [Dòng cần liên kết đến](#dòng-cần-liên-kết-đến)
 ## 1. About the Dataset
    - The `classicmodels` database is a retailer of scale models of classic cars. It contains typical business data, including information about customers, products, sales orders, sales order line items, and more.
    - The MySQL sample database schema consists of the following tables:
@@ -40,7 +40,14 @@ Tổng quan kiến trúc Data Warehouse:
 - **BI Tool:** Cắm dữ liệu vào Power BI vào tạo ra các báo cáo để đưa ra insight
 
 ## 5. Data Source -> Staging Area
+- Trong **Project** ở ODI, tạo 1 folder đặt tên là SRC-STG để lưu trữ các job đổ dữ liệu từ *Source* vào *Staging*
+- Ở Oracle Database: tạo các bảng có cấu trúc y hệt với các bảng ở nguồn
+-  
 
 ## 5. Other resources
 - [Slide](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/tree/main/slide)
 - [Steps to build a data warehouse](https://docs.google.com/document/d/1aUuI05t6H8JNAP0yxywMeoEULC0fLZ7-QiKZPJ1tfuQ/edit?usp=sharing)
+
+
+### Dòng cần liên kết đến
+<a id="dòng-cần-liên-kết-đến"></a>

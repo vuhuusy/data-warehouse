@@ -18,13 +18,13 @@
       <img src="https://www.mysqltutorial.org/wp-content/uploads/2023/10/mysql-sample-database.png" width="600" />
 
 ## 2. Tools used in the Project
-- EDA: Python
+- EDA: Python (pandas, matplotlib, seaborn, ...)
 - Database: MySQL, Oracle Database
 - Data Integration Tool: Oracle Data Integrator
 - Data Visualization: PowerBI
 
 ## 3. Exploratory Data Analysis (EDA)
-   - Số bảng cột,...
+- Exploratory Data Analysis: [Link](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/EDA.ipynb)
  
 
 ## 4. Kiến trúc Data Warehouse
@@ -38,3 +38,6 @@ Tổng quan kiến trúc Data Warehouse:
    - Bảng Fact sẽ sử dụng cơ chế Control Append để load những dữ liệu mới
 - **Data Mart:** Sau khi load dữ liệu đã được xử lý vào Data Warehouse, chúng ta tạo ra các Data Mart chứa dữ liệu cần dùng cho các phòng ban (department) (VD: product, region, customer)
 - **BI Tool:** Cắm dữ liệu vào Power BI vào tạo ra các báo cáo để đưa ra insight
+
+## 5. Other resources
+- [Slide](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/tree/main/slide)

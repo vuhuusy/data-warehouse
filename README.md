@@ -8,10 +8,10 @@ In this project, I am going to build a Data Warehouse for an E-commerce company.
 3. [Exploratory Data Analysis](#3)
 4. [Data Warehouse Architecture](#4)
 5. [Implementation Process](#5)
-   - [Data Source to Staging Area](#6)
-   - [Staging Area to Data Warehouse](#7)
-   - [Data Warehouse to Data Mart](#8)
-   - [Data Mart to BI Tool](#9)
+   - 5.1 [ Data Source to Staging Area](#6)
+   - 5.2 [Staging Area to Data Warehouse](#7)
+   - 5.3 [Data Warehouse to Data Mart](#8)
+   - 5.4 [Data Mart to BI Tool](#9)
 
 ## 1. About the Dataset <a id="1"></a>
    - The `classicmodels` database is a retailer of scale models of classic cars. It contains typical business data, including information about customers, products, sales orders, sales order line items, and more.

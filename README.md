@@ -7,7 +7,8 @@ In this project, I am going to build a Data Warehouse for an E-commerce company
 2. [Tools used in the Project](#2)
 3. [Exploratory Data Analysis](#3)
 4. [Data Warehouse Architecture](#4)
-5. 
+5. [Quy trình thực hiện](#5)
+   - [Data Source -> Staging Area](#6)
 
 
 ## 1. About the Dataset <a id="1"></a>
@@ -46,10 +47,13 @@ Tổng quan kiến trúc Data Warehouse:
 - **Data Mart:** Sau khi load dữ liệu đã được xử lý vào Data Warehouse, chúng ta tạo ra các Data Mart chứa dữ liệu cần dùng cho các phòng ban (department) (VD: product, region, customer)
 - **BI Tool:** Cắm dữ liệu vào Power BI vào tạo ra các báo cáo để đưa ra insight
 
-## 5. Data Source -> Staging Area <a id="5"></a>
+## 5. Quy trình thực hiện <a id="5"></a>
+### 5.1. Data Source -> Staging Area <a id="6"></a>
 - Trong **Project** ở ODI, tạo 1 folder đặt tên là SRC-STG để lưu trữ các job đổ dữ liệu từ *Source* vào *Staging*
-- Ở Oracle Database: tạo các bảng có cấu trúc y hệt với các bảng ở nguồn
--  
+- Trong Oracle Database: tạo các bảng có cấu trúc y hệt với các bảng ở source
+-  Tạo ra các **MAPPING**, đặt tên: SRC-STG_<tên_bảng_nguồn> để thực hiện load dữ liệu từ source về staging.
+-  Cách tiếp cận: Load 1:1 tức là không làm biến đổi dữ liệu, bảng ở source và bảng ở staging sẽ giống hệt nhau (Lưu ý: trong thực tế khi ETL bảng giao dịch sẽ chặn dữ liệu theo ngày, ví dụ: chỉ ETL dữ liệu bán hàng ngày hôm nay)
+
 
 ## 5. Other resources
 - [Slide](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/tree/main/slide)

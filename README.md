@@ -22,7 +22,7 @@ In this project, I am going to build a Data Warehouse for an E-commerce company
       - **employees:** stores employee information and the organization structure such as who reports to whom.
       - **offices:** stores sales office data.
    - The following picture illustrates the ER diagram of the sample database:
-      <img src="https://www.mysqltutorial.org/wp-content/uploads/2023/10/mysql-sample-database.png" width="600" />
+      <img src="https://www.mysqltutorial.org/wp-content/uploads/2023/10/mysql-sample-database.png" width="500"/>
 
 ## 2. Tools used in the Project <a id="2"></a>
 - EDA: Python (pandas, matplotlib, seaborn, ...)

@@ -3,7 +3,7 @@
 ## Table of Contents
 1. [About the Dataset](#line-30)
 
-### 1. About the Dataset
+## 1. About the Dataset
    - The `classicmodels` database is a retailer of scale models of classic cars. It contains typical business data, including information about customers, products, sales orders, sales order line items, and more.
    - The MySQL sample database schema consists of the following tables:
       - **customers:** stores customer’s data.
@@ -16,15 +16,18 @@
       - **offices:** stores sales office data.
    - The following picture illustrates the ER diagram of the sample database:
       <img src="https://www.mysqltutorial.org/wp-content/uploads/2023/10/mysql-sample-database.png" width="600" />
-### 3. Exploratory Data Analysis (EDA)
-   - Số bảng cột,...
 
-### 4. Giới thiệu về Tool sử dụng trong Project
+## 2. Tools used in the Project
+- EDA: Python
 - Database: MySQL, Oracle Database
 - Data Integration Tool: Oracle Data Integrator
-- Data Visualization: 
+- Data Visualization: PowerBI
 
-### 5. Kiến trúc Data Warehouse
+## 3. Exploratory Data Analysis (EDA)
+   - Số bảng cột,...
+ 
+
+## 4. Kiến trúc Data Warehouse
 ![Data Warehouse Architecture](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/data%20warehouse/Data%20Warehouse%20Architecture.png)
 
 Tổng quan kiến trúc Data Warehouse:

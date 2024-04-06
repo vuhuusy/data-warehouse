@@ -43,3 +43,4 @@ Tổng quan kiến trúc Data Warehouse:
 
 ## 5. Other resources
 - [Slide](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/tree/main/slide)
+- [Steps to build a data warehouse](https://docs.google.com/document/d/1aUuI05t6H8JNAP0yxywMeoEULC0fLZ7-QiKZPJ1tfuQ/edit?usp=sharing)

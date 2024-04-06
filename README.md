@@ -39,5 +39,7 @@ Tổng quan kiến trúc Data Warehouse:
 - **Data Mart:** Sau khi load dữ liệu đã được xử lý vào Data Warehouse, chúng ta tạo ra các Data Mart chứa dữ liệu cần dùng cho các phòng ban (department) (VD: product, region, customer)
 - **BI Tool:** Cắm dữ liệu vào Power BI vào tạo ra các báo cáo để đưa ra insight
 
+## 5. Data Source -> Staging Area
+
 ## 5. Other resources
 - [Slide](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/tree/main/slide)

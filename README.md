@@ -4,8 +4,8 @@
 1. [About the Dataset](#1)
 2. 
 
-<a id="1"></a>
-## 1. About the Dataset
+
+## 1. About the Dataset <a id="1"></a>
    - The `classicmodels` database is a retailer of scale models of classic cars. It contains typical business data, including information about customers, products, sales orders, sales order line items, and more.
    - The MySQL sample database schema consists of the following tables:
       - **customers:** stores customer’s data.

@@ -40,4 +40,4 @@ Tổng quan kiến trúc Data Warehouse:
 - **BI Tool:** Cắm dữ liệu vào Power BI vào tạo ra các báo cáo để đưa ra insight
 
 ## 5. Other resources
-- Slide
+- [Slide](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/tree/main/slide)

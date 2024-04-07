@@ -53,6 +53,7 @@ Fact tables use Control Append mechanism to load new data.
 - **BI Tool:** Data is plugged into Power BI to generate reports for insights.
 
 ### 4.2 Star Schema <a id="4.2"></a>
+
 <img src="https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/image/Star%20Schema.png" width="600"/>
 
 - Star schema consists of 4 Dimension tables and 1 Fact table as follows:

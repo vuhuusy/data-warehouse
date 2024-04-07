@@ -79,14 +79,18 @@ Tổng quan kiến trúc Data Warehouse:
    - CKM Oracle
  
 ### 5.3 Data Warehouse to Data Mart <a id="8"></a>
-- Trong **Project** của ODI, tạo 1 folder đặt tên là DWH – DATA MART để lưu trữ các job từ  DWH vào Data Mart
+- Trong **Project** của ODI, tạo 1 folder đặt tên là DWH – DATA MART để lưu trữ các job từ DWH vào Data Mart
 - Trong Oracle Database: tạo các bảng lưu trữ dữ liệu được tổng hợp từ Data Warehouse ([Step 3](https://docs.google.com/document/d/1aUuI05t6H8JNAP0yxywMeoEULC0fLZ7-QiKZPJ1tfuQ/edit?usp=sharing))
 - Tạo các **MAPPING**, đặt tên: DWH-DMART_<tên_bảng_đích> để thực hiện load dữ liệu tổng hợp từ bảng Fact vào các bảng trong Data Mart
+  
+   <img src="https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/image/dmart_mapping.png" width="300"/>
 - Knowledge Modules used:
   - IKM Oracle Insert
   - CKM Oracle
 
 ### 5.4 Data Mart to BI Tool <a id="9"></a>
+- Trong Power BI, tạo kết nối với Oracle database để lấy dữ liệu ([Hướng dẫn kết nối](https://indaacademy.vn/powerbi/ket-noi-power-bi-desktop-voi-oracle-database/))
+- 
 
 ## 6. Other resources
 - [Slide](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/tree/main/slide)

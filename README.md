@@ -11,7 +11,8 @@ In this project, I am going to build a Data Warehouse for an E-commerce company.
    - 5.1 [ Data Source to Staging Area](#6)
    - 5.2 [Staging Area to Data Warehouse](#7)
    - 5.3 [Data Warehouse to Data Mart](#8)
-   - 5.4 [Data Mart to BI Tool](#9)
+   - 5.4 [Luồng tổng (Load plan)](#9)
+   - 5.5 [Data Mart to BI Tool](#10)
 
 ## 1. About the Dataset <a id="1"></a>
    - The `classicmodels` database is a retailer of scale models of classic cars. It contains typical business data, including information about customers, products, sales orders, sales order line items, and more.
@@ -34,9 +35,9 @@ In this project, I am going to build a Data Warehouse for an E-commerce company.
 - Data Visualization: PowerBI
 
 ## 3. Exploratory Data Analysis <a id="3"></a>
+- Trong phần này, chúng ta sẽ khám phá dữ liệu để có được cái nhìn tổng quan về bộ dữ liệu. Chúng ta sẽ xem xét các giá trị null, outliers, các dữ liệu nhiễu (lỗi) để có thể đưa ra quyết định xử lý dữ liệu ở lớp Staging.
 - Exploratory Data Analysis: [Link](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/EDA.ipynb)
  
-
 ## 4. Data Warehouse Architecture <a id="4"></a>
 ![Data Warehouse Architecture](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/data%20warehouse/Data%20Warehouse%20Architecture.png)
 
@@ -88,7 +89,17 @@ Tổng quan kiến trúc Data Warehouse:
   - IKM Oracle Insert
   - CKM Oracle
 
-### 5.4 Data Mart to BI Tool <a id="9"></a>
+### 5.4 Luồng tổng (Load plan) <a id="9"></a>
+- Tạo ra các **Scenario** của các **MAPPING** vừa tạo
+- Thứ tự thực hiện **Scenario** như sau:
+
+  <img src="https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/image/load_plan.png" width="700"/>
+
+- Cấu hình chạy tự động mỗi ngày vào 12 giờ đêm như sau:
+
+  <img src="https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/blob/main/image/load_plan_scheduling.png" width="500"/>
+### 5.5 Data Mart to BI Tool <a id="10"></a>
+- Server: (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=222.252.21.249)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=orclpdb)))
 - Trong Power BI, tạo kết nối với Oracle database để lấy dữ liệu ([Hướng dẫn kết nối](https://indaacademy.vn/powerbi/ket-noi-power-bi-desktop-voi-oracle-database/))
 - 
 

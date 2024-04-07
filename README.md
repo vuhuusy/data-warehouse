@@ -117,5 +117,10 @@ Fact tables use Control Append mechanism to load new data.
 - Create reports to serve for analysis and decision-making purposes.
 
 ## 6. Other resources
-- [Summary slide of key content in The Data Warehouse Toolkit book](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/tree/main/slide)
+- SQL code used in the project:
+   - [data source](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/tree/main/data%20source)
+   - [staging](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/tree/main/staging)
+   - [data warehouse](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/tree/main/data%20warehouse)
+   - [data mart](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/tree/main/data%20mart)
+- [Key content in The Data Warehouse Toolkit book](https://github.com/vuhuusy/Data-Warehouse-for-Classicmodels-Database/tree/main/slide)
 - [Step-by-step process of building a Data Warehouse](https://docs.google.com/document/d/1aUuI05t6H8JNAP0yxywMeoEULC0fLZ7-QiKZPJ1tfuQ/edit?usp=sharing)
